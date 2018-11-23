@@ -1,0 +1,3 @@
+class CError extends Error  {
+  
+}
