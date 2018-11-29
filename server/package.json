@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "start": "npm run build && npm run server",
-    "server": "node dis/server.js",
+    "start": "npm run build && npm run https",
+    "http": "node dis/http-server.js",
+    "https": "node dis/https-server.js",
     "build": "tsc"
   },
   "dependencies": {
@@ -9,6 +10,7 @@
     "@types/koa-bodyparser": "^5.0.1",
     "@types/koa-router": "^7.0.33",
     "@types/koa-static": "^4.0.0",
+    "@types/mz": "^0.0.32",
     "@types/node": "^10.12.7",
     "babel-cli": "^6.26.0",
     "koa": "^2.6.2",
